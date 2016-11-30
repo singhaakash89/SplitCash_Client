@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.splitCash"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="23"
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" >
+    </uses-sdk>
+
+
+    <!-- ************************************[START gcm_permission]********************************************** -->
+    <!-- /*****************************************************************************************************/ -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- Awakes the processor up when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <!--
+        Creates a custom permission so only this app can receive its messages.
+			NOTE: the permission *must* be called PACKAGE.permission.C2D_MESSAGE,
+			where PACKAGE is the application's package name.
+
+    -->
+
+    <uses-permission android:name="com.app.splitCash.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- To access Google+ APIs: -->
+    <!-- /*********************************************************************************************************/ -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".sharedPreferences.SharedPreferenceManager"
+            android:label="splitCash" />
+        <activity
+            android:name=".root.RegisterActivity"
+            android:label="WidUapp Registration" >
+        </activity>
+
+        <activity
+            android:name=".gcmRegister.MainActivity"
+            android:label="WidUapp Registration"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".root.HomePageActivity_NO_USE"
+            android:label=" "
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".root.HomepageActivityNew"
+            android:label=" "
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".root.SplashActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".contacts.ContactDisplayActivity"
+            android:label="Select Contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".group.CreateKnownExpenseGroup" />
+        </activity>
+        <activity
+            android:name=".group.Group"
+            android:label="Group Members" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomePageActivity_NO_USE" />
+        </activity>
+        <activity
+            android:name=".group.AddMemberToGroup"
+            android:label="@string/title_activity_add_member_to_group" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.splitCash.group.Group" />
+        </activity>
+        <activity
+            android:name=".group.MoneyTimeActivity"
+            android:label="@string/title_activity_splitCash" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.splitCash.group.Group" />
+        </activity>
+        <activity
+            android:name=".group.CreateGroup"
+            android:label="Group Type" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomePageActivity_NO_USE" />
+        </activity>
+        <activity
+            android:name=".group.CreateKnownExpenseGroup"
+            android:label="Create Group" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomePageActivity_NO_USE" />
+        </activity>
+        <activity
+            android:name=".group.CreateUnKnownExpenseGroup"
+            android:label="Create Group" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomePageActivity_NO_USE" />
+        </activity>
+        <activity
+            android:name=".group.GroupUnKnown"
+            android:label="Group Members" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomePageActivity_NO_USE" />
+        </activity>
+        <activity
+            android:name=".group.EditGroup"
+            android:label="Create Group" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.splitCash.group.GroupUnKnown" />
+        </activity>
+        <activity
+            android:name=".chat.ConversationActivity"
+            android:label=" "
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chat.ConversationActivity" />
+        </activity>
+        <activity
+            android:name=".chat.ChatListActivity_NO_USE"
+            android:label=" ">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomepageActivityNew" />
+        </activity>
+        <activity
+            android:name=".root.SettingsActivity"
+            android:label="WidUapp Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomepageActivityNew" />
+        </activity>
+        <activity
+            android:name=".root.ContactUs"
+            android:label="Contact Widuapp Developer">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".root.HomepageActivityNew" />
+        </activity>
+
+
+
+
+        <!-- [START gcm_receiver] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.app.splitCash" />
+            </intent-filter>
+        </receiver>
+        <!-- [END gcm_receiver] -->
+
+
+        <!-- [START gcm_listener] -->
+        <service
+            android:name=".gcmRegister.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- [END gcm_listener] -->
+
+
+        <!-- [START instanceId_listener] -->
+        <service
+            android:name=".gcmRegister.MyInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <!-- [END instanceId_listener] -->
+
+        <service
+            android:name=".gcmRegister.RegistrationIntentService"
+            android:exported="false" >
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

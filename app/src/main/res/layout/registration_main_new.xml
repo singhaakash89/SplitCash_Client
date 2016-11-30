@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_registration_image"
+    tools:context=".root.RegisterActivity">
+
+    <include
+        android:id="@+id/app_start_bar"
+        layout="@layout/app_start_bar" />
+
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="100dp"
+        android:name="com.app.splitCash.fragments.RegisterActivityFragment"
+        tools:layout="@layout/registration_main_fragment_circular_image" />
+
+    <ProgressBar
+        android:id="@+id/registerProgressBar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="470dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="110dp"
+            android:background="@color/buttonColor_new"
+            android:text="@string/button_register"
+            android:textAllCaps="false"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#fff"
+            android:onClick="registerUser"/>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

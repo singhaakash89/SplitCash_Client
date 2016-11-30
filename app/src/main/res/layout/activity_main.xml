@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_registration_image"
+    android:id="@+id/main_layout">
+
+    <include
+        android:id="@+id/app_start_bar"
+        layout="@layout/app_start_bar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="1dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_chat_list_person"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_background_white_color"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registering_message_1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/phoneNumberTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/registering_message_2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@color/buttonColor_new"
+        android:onClick="startNewActivity"
+        android:text="Continue"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#fff"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:background="@color/buttonColor_new"
+        android:onClick="retryActivity"
+        android:text="Retry"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#fff"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/moneyTimeMemberNameTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_dark"
+        android:text="TestTextsadasdasdasdasd"/>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Get : "
+        android:textColor="#4DB6AC"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/moneyTimeMemberToTakeTextView"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="232dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="123456789"
+        android:textColor="#00897B"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="237dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Pay : "
+        android:textSize="13sp"
+        android:textColor="#E57373"/>
+
+    <TextView
+        android:id="@+id/moneyTimeMemberToGiveTextView"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="293dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="123456789"
+        android:textSize="15sp"
+        android:textColor="#E53935"/>
+
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="230dp"
+        android:layout_width="28dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_rupee_symbol"
+        />
+
+    <TextView
+        android:id="@+id/moneyTimeMemberExpenseTextView"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginRight="45dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="123456789"/>
+
+
+    <View
+        android:layout_marginTop="61dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/low_grey_color"/>
+
+
+
+</RelativeLayout>

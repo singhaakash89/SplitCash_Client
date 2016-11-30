@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background_transparent">
+
+<FrameLayout
+    android:layout_width="185dp"
+    android:layout_height="180dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/layout_background_transparent">
+
+    <ImageView
+        android:id="@+id/userImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/user_imageview_thumbnail"
+        android:layout_marginLeft="-5dp" />
+
+
+    <TextView
+        android:id="@+id/userImageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Select profile picture"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"/>
+
+</FrameLayout>
+
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layout_background_transparent"
+        android:text="Welcome to MeWidYou!\n\nAndroid-platform messaging with friends all over the world.\n\nHope you like us."/>
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/layout_background_transparent"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/user_name_hint"
+        android:inputType="textCapSentences"
+        android:textColorHint="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="285dp"
+        android:background="@drawable/layout_background_transparent"
+        android:ems="10"
+        android:hint="@string/user_Phone_hint"
+        android:inputType="phone"
+        android:textColorHint="#000"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

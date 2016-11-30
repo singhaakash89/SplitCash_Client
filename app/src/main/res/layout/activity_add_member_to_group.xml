@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.splitCash.group.AddMemberToGroup">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <TextView
+        android:id="@+id/memberNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:text="Member Name :"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/memberNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="Enter Member Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/memberPhoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:text="Phone Number :"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/memberPhoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/memberExpensedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="290dp"
+        android:text="Amount Expensed :"
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/memberExpensedEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="320dp"
+        android:ems="10"
+        android:hint="Enter Amount Expensed"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@color/buttonColor"
+        android:onClick="addMemberToGroup"
+        android:text="Add"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

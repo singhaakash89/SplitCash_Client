@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/navCustomRowImageView"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_home_nav" />
+
+    <TextView
+        android:id="@+id/navCustomRowTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:gravity="center_vertical"
+        android:text="Hello Aakash Singh...!!!"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/text_color_dark" />
+
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="-57dp">
+
+
+        <TextView
+            android:id="@+id/chatNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="14dp"
+            android:text="Chats"
+            android:textColor="@color/text_color_light"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/startChatImageView"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_chat"
+            android:onClick="startChat"/>
+
+    </FrameLayout>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/chatListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:footerDividersEnabled="true"/>
+
+            <TextView
+                android:id="@+id/emptyChatListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nothing to show"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:textColor="@color/dull_orange"/>
+
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            android:name="com.app.splitCash.navDrawer.NavigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

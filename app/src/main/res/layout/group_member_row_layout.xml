@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="150dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_dark"
+        android:text="TestTextkjshjkdhaskjdhashdkajsdhjkshd"
+        android:id="@+id/memberNameTextView"
+        android:gravity="start"/>
+
+    <ImageView
+        android:layout_marginLeft="257dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_rupee_symbol"/>
+
+    <TextView
+        android:id="@+id/memberExpenseTextView"
+        android:layout_marginLeft="285dp"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="123456789"/>
+
+    <View
+        android:layout_marginTop="54dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/low_grey_color"/>
+
+
+
+</RelativeLayout>

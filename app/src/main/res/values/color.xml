@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_old">#037cd5</color>
+    <color name="primary_dark_old">#006cb4</color>
+    <color name="accent_old">#FF5252</color>
+    <color name="accent_too_old">#00BCD4</color>
+
+
+
+    <color name="primary">#EAB126</color>
+    <color name="primary_dark">#1fb58f</color>
+    <color name="accent">#FEA680</color>
+    <color name="buttonColor_new">#F53240</color>
+
+    <color name="aqua">#6bbaa7</color>
+    <color name="coral">#F53240</color>
+    <color name="golden">#F9bE02</color>
+    <color name="aquaMarine">#02C8A7</color>
+    <color name="jewel">#5f0F4E</color>
+    <color name="sand">#EAB126</color>
+    <color name="ocean">#1fb58f</color>
+    <color name="cocktail">#F24C4E</color>
+    <color name="coral_new">#e14658</color>
+    <color name="red_new">#b81d18</color>
+    <color name="sofie_black">#202020</color>
+    <color name="sofie_red">#ca171b</color>
+    <color name="brown">#48372f</color>
+    <color name="bright_yellow">#fee202</color>
+    <color name="golden_yellow_1">#ee9c21</color>
+    <color name="golden_yellow_2">#ea7d24</color>
+    <color name="hot_red">#bd0102</color>
+    <color name="navy_blue_dark">#152737</color>
+    <color name="navy_blue_light">#1d2f3e</color>
+    <color name="primary_1">#01ABAA</color>
+    <color name="primary_2">#168a8f</color>
+    <color name="hike">#0b99bc</color>
+    <color name="dull_orange">#FEA680</color>
+    <color name="royal_blue">#0B99BC</color>
+    <color name="dull_green_1">#4ca8a1</color>
+    <color name="dull_green_2">#7ec2aa</color>
+    <color name="dull_red_1">#ab3334</color>
+
+
+    <color name="text_color_dark">#000</color>
+    <color name="text_color_light">#fff</color>
+    <color name="hint_color">#BDBDBD</color>
+    <color name="bgcolor">#FFEB3B</color>
+    <color name="buttonColor">#00BCD4</color>
+    <color name="yellow_color">#dacc2e</color>
+    <color name="green_color">#26A69A</color>
+    <color name="blue_color">#26c6da</color>
+    <color name="low_green_color">#80cbc4</color>
+    <color name="low_orange_color">#ffcdd2</color>
+    <color name="low_grey_color">#cfd8dc</color>
+    <color name="high_grey_color">#F44336</color>
+    <color name="light_black">#212121</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="chat_user_reply_background_color">#c8f0ff</color>
+    <color name="chat_company_reply_background_color">#F5F5F5</color>
+    <color name="gray">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="cyan">@android:color/holo_blue_light</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background_new">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="523dp">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="335dp"
+            android:layout_height="57dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleViewAppBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/ic_chat_list_person" />
+
+
+            <TextView
+                android:id="@+id/chatNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="18dp"
+                android:text="ABCDEFGHIJKLMNOPQ"
+                android:textColor="@color/text_color_light"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/addPhoto"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_add_photo"
+                android:onClick="addPhoto"/>
+
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/chat_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="61dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:divider="@drawable/chat_divider"
+            android:scrollbarStyle="outsideOverlay"></ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cocktail">
+
+            <ImageView
+                android:id="@+id/emotIconSend"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/ic_emot_icon" />
+
+            <EditText
+                android:id="@+id/chatEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/chatSend"
+                android:layout_toStartOf="@+id/chatSend"
+                android:background="@drawable/layout_background_transparent"
+                android:hint="Type a message..."
+                android:inputType="textCapSentences|textMultiLine|textImeMultiLine"
+                android:maxLines="10"
+                android:scrollHorizontally="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:singleLine="false"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/chatSend"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_chat_send_new" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleView"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_chat_list_person"/>
+
+
+    <TextView
+        android:id="@+id/chatNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="80dp"
+        android:text="TestTextjshasjhjcshkjchasjkch"
+        android:textColor="@color/text_color_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/low_grey_color"/>
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:background="@color/low_grey_color" />
+
+    <ImageView
+        android:id="@+id/deleteChatRow"
+        android:layout_marginLeft="315dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_delete"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <FrameLayout
+        android:id="@+id/appBarFramelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="-57dp">
+
+
+        <TextView
+            android:id="@+id/fragmentNameForAppBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="14dp"
+            android:text="Groups"
+            android:textColor="@color/text_color_light"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:id="@+id/fragmentImageForAppBar"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_add_group" />
+
+    </FrameLayout>
+
+
+    <android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/mainContentFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBarID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="200dp" />
+
+
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:name="com.app.splitCash.navDrawer.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

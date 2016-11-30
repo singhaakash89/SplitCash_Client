@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.app.splitCash.group.CreateKnownExpenseGroup">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+
+    <TextView
+        android:id="@+id/nameGroupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Group Name :"
+        android:textColor="#000"
+        android:textColorHint="@color/hint_color"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/groupNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter Group Name"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/expensesGroupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:text="Expenses : "
+        android:textColor="#000"
+        android:textColorHint="@color/hint_color"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/expenseEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Enter Amount Expensed"
+        android:inputType="number"
+        android:textSize="17sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/typeTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type :"
+        android:textSize="17sp"
+        android:textColor="#000"/>
+
+        <Spinner
+            android:id="@+id/groupTypeSpinner"
+            android:layout_marginLeft="20dp"
+            android:entries="@array/type_spinner_array"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BBDEFB"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+        android:text="Description : "
+        android:textColor="#000"
+        android:textColorHint="@color/hint_color"
+        android:textSize="17sp"/>
+
+    <EditText
+        android:id="@+id/groupDescriptionEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="370dp"
+        android:ems="12"
+        android:hint="Enter small description for Group"
+        android:textSize="17sp"/>
+
+
+    <Button
+        android:layout_marginTop="480dp"
+        android:id="@+id/createGroupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        android:onClick="createGroup"
+        android:text="Create"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_color_light"/>
+
+
+</RelativeLayout>

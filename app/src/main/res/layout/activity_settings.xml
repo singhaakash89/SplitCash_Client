@@ -1,0 +1,23 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.splitCash.root.SettingsActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Fire Notification"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:background="@color/cocktail"
+        android:onClick="fireNotification"/>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/groupNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="7dp"
+        android:text="TestTextjshasjhjcshkjchasjkch"
+        android:textColor="@color/text_color_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/groupDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="180dp"
+        android:layout_marginTop="36dp"
+        android:text="With Somendra Prakash And Aaaksh SINGH"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/groupSpinnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="195dp"
+        android:layout_marginTop="36dp"
+        android:text="Apartment Bill"
+        android:textColor="#26A69A"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_rupee_symbol"
+        />
+
+    <TextView
+        android:id="@+id/expenseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="7dp"
+        android:text="123456789"
+        android:textColor="@color/text_color_dark"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/deleteMemberRow"
+        android:layout_marginLeft="315dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_delete"/>
+
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/low_grey_color"/>
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:background="@color/low_grey_color" />
+
+
+
+</RelativeLayout>

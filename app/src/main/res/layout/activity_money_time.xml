@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.app.splitCash.group.MoneyTimeActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"/>
+
+    <ListView
+        android:id="@+id/moneyTimeMemberListView"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="440dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average :"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/averageTextView"
+        android:layout_marginLeft="246dp"
+        android:layout_marginTop="440dp"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:text="Nill"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:gravity="end"/>
+
+
+    <Button
+        android:id="@+id/moneyTimeMemberMailButton"
+        android:layout_marginTop="495dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/buttonColor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:capitalize="none"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#fff"
+        android:text="@string/button_for_splitCash_mail"
+        android:onClick="moneyTimeMail"/>
+
+</RelativeLayout>

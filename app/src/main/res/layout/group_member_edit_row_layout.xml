@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="210dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_dark"
+        android:text="TestTexthgjhgjhgjhgjhg"
+        android:id="@+id/memberNameTextViewEdit"
+        android:gravity="start"/>
+
+    <ImageView
+        android:layout_marginLeft="140dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_rupee_symbol"/>
+
+    <TextView
+        android:id="@+id/memberExpenseTextViewEdit"
+        android:layout_marginLeft="166dp"
+        android:layout_marginRight="130dp"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="123456789"/>
+
+
+    <ImageView
+        android:id="@+id/addAmountToRow"
+        android:layout_marginLeft="228dp"
+        android:layout_centerVertical="true"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_add_amount"/>
+
+    <ImageView
+        android:id="@+id/subtractAmountFromRow"
+        android:layout_marginLeft="276dp"
+        android:layout_centerVertical="true"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:src="@drawable/ic_subtract_amount"/>
+
+
+    <ImageView
+        android:id="@+id/deleteMemberRow"
+        android:layout_marginLeft="315dp"
+        android:layout_centerVertical="true"
+        android:layout_width="30dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_delete"/>
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="269dp"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/low_grey_color" />
+
+
+    <View
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="311dp"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:background="@color/low_grey_color" />
+
+    <View
+        android:layout_marginTop="54dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/low_grey_color"/>
+
+</RelativeLayout>

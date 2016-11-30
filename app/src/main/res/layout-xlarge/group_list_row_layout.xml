@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_dark"
+        android:text="TestText"
+        android:id="@+id/groupNameTextView"/>
+
+    <TextView
+        android:id="@+id/groupDescriptionTextView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="With Somendra Prakash And Aaaksh SINGH"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/groupSpinnerTextView"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="255dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apartment Bill"
+        android:textSize="14sp"
+        android:textColor="#26A69A"/>
+
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="250dp"
+        android:layout_width="28dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_rupee_symbol"
+        />
+
+    <TextView
+        android:id="@+id/expenseTextView"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="280dp"
+        android:textSize="16sp"
+        android:textColor="@color/text_color_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy"/>
+
+
+</RelativeLayout>
